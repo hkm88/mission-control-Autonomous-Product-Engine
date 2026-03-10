@@ -32,12 +32,12 @@
 
 ---
 
-## 🆕 What's New in v1.4.1
+## 🆕 What's New in v1.5.0
 
-- **Workspace Deletion Fix** — Fixed foreign key constraint error when deleting workspaces with auto-created workflow templates
-- **Kanban UX** — Improved scrollbar visibility, optional compact empty columns mode (Settings → Kanban UX)
-- **Docker CI** — GitHub Actions workflow for automated Docker builds
-- **Pipeline Docs** — New `docs/HOW-THE-PIPELINE-WORKS.md` — comprehensive guide to the multi-agent pipeline lifecycle
+- **Task Image Attachments** — Upload reference images to tasks. AI agents see them during dispatch — perfect for UI mockups, screenshots, and visual specs.
+- **PORT env var support** — Set `PORT` in `.env.local` and it actually works now.
+- **Webhook auth fix** — Split-service deployments no longer have completion callbacks blocked by API token middleware.
+- **Agent status fix** — Agents correctly show standby when idle instead of stuck on "Working".
 
 See the full [CHANGELOG](CHANGELOG.md) for details.
 
