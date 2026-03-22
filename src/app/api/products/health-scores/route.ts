@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAllProductScores } from '@/lib/autopilot/health-score';
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/products/health-scores
  * Returns all product health scores as a map { productId: score }.
